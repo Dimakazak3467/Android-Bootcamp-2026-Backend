@@ -1,10 +1,13 @@
 package ru.sicampus.bootcamp2026.controller;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import ru.sicampus.bootcamp2026.dto.PersonDTO;
+import ru.sicampus.bootcamp2026.dto.PersonRegisterDto;
 import ru.sicampus.bootcamp2026.entity.Person;
 import ru.sicampus.bootcamp2026.service.PersonService;
 
@@ -27,8 +30,13 @@ public class PersonController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<PersonDTO> createPerson(@RequestBody PersonDTO dto){
+    public ResponseEntity<PersonDTO> createPerson(@RequestBody PersonRegisterDto dto){
         return ResponseEntity.status(HttpStatus.CREATED).body(personService.createPerson(dto));
+    }
+
+    @GetMapping("/login")
+    public ResponseEntity<PersonDTO> login(Authentication authentication){
+        return ResponseEntity.ok(personService.getPersonByUsername(authentication.getName()));
     }
 
     @PutMapping("/{id}")
@@ -40,6 +48,12 @@ public class PersonController {
     public ResponseEntity<Void> deletePerson(@PathVariable Long id){
         personService.deletePerson(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/username/{username}")
+    public ResponseEntity<String> getByUsername(@PathVariable String username){
+        PersonDTO personDTO = personService.getPersonByUsername(username);
+        return ResponseEntity.ok("User " + personDTO.getUsername() + "is registered");
     }
 
 }

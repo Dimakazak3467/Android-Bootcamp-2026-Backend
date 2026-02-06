@@ -5,7 +5,7 @@
        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
 
-    <changeSet id="2025-02-02--0002-person" author="dkazak">
+    <changeSet id="2026-02-02--0002-person" author="dkazak">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="person"/>
@@ -23,7 +23,7 @@
             <column name="email" type="VARCHAR(50)">
                 <constraints nullable="false" unique="true"/>
             </column>
-            <column name="photo_url" type="VARCHAR(100)"/>
+            <column name="photo_url" type="VARCHAR(250)"/>
             <column name="department_id" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="fk_person_department"
                              referencedTableName="department"
@@ -31,5 +31,37 @@
             </column>
         </createTable>
     </changeSet>
+
+    <changeSet id="2025-02-04--0003-username" author="dkazak">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="person"/>
+            <not>
+                <columnExists tableName="person" columnName="username"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="person">
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </addColumn>
+
+    </changeSet>
+
+    <changeSet id="2025-02-04--0004-password" author="dkazak">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="person"/>
+            <not>
+                <columnExists tableName="person" columnName="password"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="person">
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+
+    </changeSet>
+
+
 
 </databaseChangeLog>

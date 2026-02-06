@@ -11,6 +11,7 @@ public class PersonDTO {
     private long id;
     private String name;
     private String email;
+    private String username;
     private String photoUrl;
     private String departmentName;
 }

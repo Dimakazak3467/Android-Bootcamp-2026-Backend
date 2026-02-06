@@ -1,3 +1,6 @@
-name;email;photo_url;department_id
-Казак Дмитрий;kazakd578@gmail.com;https://cdn.forbes.ru/files/c/908x571/story_images/gettyimages-591529968.jpg__1563198568__98999.webp;2
-Фофин Егор;fofin@mail.ru;https://cdn.forbes.ru/files/c/908x571/story_images/gettyimages-591529968.jpg__1563198568__98999.webp;1
+name;email;photo_url;department_id;username;password
+Казак Дмитрий;kazakd578@gmail.com;https://sun9-45.userapi.com/impg/s1Xz9pR2WexgNW9ahtfzIm0yPu43NkJYm9-y4g/56qhr7eRUEM.jpg?size=1080x1026&quality=95&sign=88d272256597935c2d569e44c23a4b27&type=album;2;kazakd;$2y$10$z/JQBs5776G8OQ4jEleU2eak79d5u5CF7opXrq8pdyB9hlVm8TE2i
+Фофин Егор;fofin@mail.ru;https://sun9-45.userapi.com/impg/s1Xz9pR2WexgNW9ahtfzIm0yPu43NkJYm9-y4g/56qhr7eRUEM.jpg?size=1080x1026&quality=95&sign=88d272256597935c2d569e44c23a4b27&type=album;1;fofine;$2y$10$z/JQBs5776G8OQ4jEleU2eak79d5u5CF7opXrq8pdyB9hlVm8TE2i
+Фофин Егор;fofdin@mail.ru;https://sun9-45.userapi.com/impg/s1Xz9pR2WexgNW9ahtfzIm0yPu43NkJYm9-y4g/56qhr7eRUEM.jpg?size=1080x1026&quality=95&sign=88d272256597935c2d569e44c23a4b27&type=album;1;fodffine;$2y$10$z/JQBs5776G8OQ4jEleU2eak79d5u5CF7opXrq8pdyB9hlVm8TE2i
+Фофин Егор;fosfin@mail.ru;https://sun9-45.userapi.com/impg/s1Xz9pR2WexgNW9ahtfzIm0yPu43NkJYm9-y4g/56qhr7eRUEM.jpg?size=1080x1026&quality=95&sign=88d272256597935c2d569e44c23a4b27&type=album;1;ffdofine;$2y$10$z/JQBs5776G8OQ4jEleU2eak79d5u5CF7opXrq8pdyB9hlVm8TE2i
+Фофин Егор;fodfin@mail.ru;https://sun9-45.userapi.com/impg/s1Xz9pR2WexgNW9ahtfzIm0yPu43NkJYm9-y4g/56qhr7eRUEM.jpg?size=1080x1026&quality=95&sign=88d272256597935c2d569e44c23a4b27&type=album;1;fofinfde;$2y$10$z/JQBs5776G8OQ4jEleU2eak79d5u5CF7opXrq8pdyB9hlVm8TE2i

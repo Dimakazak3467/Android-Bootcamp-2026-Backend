@@ -13,6 +13,7 @@ public class PersonMapper {
         personDTO.setId(person.getId());
         personDTO.setName(person.getName());
         personDTO.setEmail(person.getEmail());
+        personDTO.setUsername(person.getUsername());
         personDTO.setPhotoUrl(person.getPhotoUrl());
         personDTO.setDepartmentName(person.getDepartment().getName());
 
